@@ -1,5 +1,5 @@
 import React from "react";
 
-export const TodoWrapper = () => {
+export default function TodoWrapper() {
   return <div>TodoWrapper</div>;
-};
+}

@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Todo = () => {
+export default function Todo() {
   return <div>Todo</div>;
-};
+}

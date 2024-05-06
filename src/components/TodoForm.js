@@ -1,5 +1,5 @@
 import React from "react";
 
-export const TodoForm = () => {
+export default function TodoForm() {
   return <div>TodoForm</div>;
-};
+}
