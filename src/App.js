@@ -26,14 +26,17 @@ function App() {
   return (
     <div>
       <h1>Todo List</h1>
-      <div className="input-container">
+      <div>
         <input
           placeholder="Update your item"
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          className="submit-input"
         />
-        <button onClick={() => addTodo(input)}>Add</button>
+        <button className="submit-button" onClick={() => addTodo(input)}>
+          Add
+        </button>
         <ul>
           {list.map((todo) => (
             <li key={todo.id}>
