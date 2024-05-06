@@ -32,7 +32,9 @@ function App() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button onClick={() => addTodo(input)}>Add</button>
+      <Button onClick={() => addTodo(input)} variant="primary">
+        Add
+      </Button>
       <ul>
         {list.map((todo) => (
           <li key={todo.id}>
