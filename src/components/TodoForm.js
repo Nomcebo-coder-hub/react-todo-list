@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function TodoForm() {
-  return <div>TodoForm</div>;
+  return <form className="TodoForm">TodoForm</form>;
 }
