@@ -39,7 +39,7 @@ function App() {
         </button>
         <ul>
           {list.map((todo) => (
-            <li key={todo.id}>
+            <li key={todo.id} className="todo-update">
               {todo.todo}
               <button
                 className="submit-button-update"

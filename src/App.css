@@ -29,7 +29,7 @@ h1 {
   color: #fff;
 }
 
-.sybmit-input::placeholder {
+.submit-input::placeholder {
   color: #e2e2e2;
 }
 
@@ -61,4 +61,11 @@ h1 {
   );
   color: #fff;
   text-transform: capitalize;
+}
+
+.todo-update {
+  color: #e2e2e2;
+  padding: 14px 32px 14px 16px;
+  border: 1px solid rgba(93, 12, 255, 1);
+  border-radius: 0 4px 4px 0;
 }
