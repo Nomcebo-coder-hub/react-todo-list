@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./index.css";
-import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [list, setList] = useState([]);
@@ -32,9 +30,7 @@ function App() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <Button onClick={() => addTodo(input)} variant="primary">
-        Add
-      </Button>
+      <button onClick={() => addTodo(input)}>Add</button>
       <ul>
         {list.map((todo) => (
           <li key={todo.id}>
