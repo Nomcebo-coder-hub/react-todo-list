@@ -24,22 +24,25 @@ function App() {
   };
 
   return (
-    <div className="search-submit">
+    <div>
       <h1>Todo List</h1>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={() => addTodo(input)}>Add</button>
-      <ul>
-        {list.map((todo) => (
-          <li key={todo.id}>
-            {todo.todo}
-            <button onClick={() => deleteTodo(todo.id)}>&times;</button>
-          </li>
-        ))}
-      </ul>
+      <div className="input-container">
+        <input
+          placeholder="Update your item"
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button onClick={() => addTodo(input)}>Add</button>
+        <ul>
+          {list.map((todo) => (
+            <li key={todo.id}>
+              {todo.todo}
+              <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
