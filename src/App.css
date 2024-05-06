@@ -1,3 +1,11 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.search-submit {
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
@@ -26,10 +34,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-Button {
-  margin-right: -15px;
 }
 
 @keyframes App-logo-spin {

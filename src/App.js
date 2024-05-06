@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
+import "./App.css";
 
 function App() {
   const [list, setList] = useState([]);
@@ -23,7 +24,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="search-submit">
       <h1>Todo List</h1>
       <input
         type="text"
