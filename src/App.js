@@ -41,7 +41,12 @@ function App() {
           {list.map((todo) => (
             <li key={todo.id}>
               {todo.todo}
-              <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+              <button
+                className="submit-button-update"
+                onClick={() => deleteTodo(todo.id)}
+              >
+                &times;
+              </button>
             </li>
           ))}
         </ul>
